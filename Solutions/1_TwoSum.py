@@ -8,9 +8,7 @@ def Two_Sum(vals, target):
 
     for i in range(len(vals)):
         other_one = target - vals[i]
-        if other_one in valdict:
-            other_one_idx = valdict[other_one]
-            if other_one_idx != i:
-                return [i, valdict[other_one]]
+        if other_one in valdict and valdict[other_one] != i:
+            return [i, valdict[other_one]]
 
     return None
