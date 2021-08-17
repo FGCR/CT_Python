@@ -1,4 +1,4 @@
-from Solutions.Addons import TestDatas
+from Solutions.LeetCode.Addons import TestDatas
 
 
 def MergeLists(first,second):
